@@ -39,12 +39,12 @@ class ShelterPage(tk.Frame):
     def confirm(self):
         selected = self.tree.selection()
         if not selected:
-            messagebox.showwarning("เตือน", "เลือกที่พักด้วยครับ")
+            messagebox.showwarning("เตือน", "โปรดเลือกที่พักด้วย")
             return
         
         s_id = self.tree.item(selected[0])['values'][0]
         service = self.controller.get_service()
         shelter_obj = next((s for s in service.get_all_shelters() if s.shelter_id == s_id), None)
         
-        # ส่งให้ Controller (Controller จะเป็นคนเช็คกฎ และเปลี่ยนหน้าให้ถ้าผ่าน)
+      
         self.controller.set_shelter(shelter_obj)

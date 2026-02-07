@@ -49,7 +49,7 @@ class CitizenPage(tk.Frame):
     def go_next(self):
         selected = self.tree.selection()
         if not selected:
-            messagebox.showwarning("เตือน", "กรุณาเลือกชื่อประชาชนก่อนครับ")
+            messagebox.showwarning("เตือน", "กรุณาเลือกชื่อประชาชนก่อน")
             return
         
         c_id = self.tree.item(selected[0])['values'][0]
