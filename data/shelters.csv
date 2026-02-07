@@ -1,0 +1,6 @@
+shelter_id,name,capacity,risk_level,location
+S001,Community Hall A (Small),5,Low,Zone A
+S002,Old Gym (High Risk),10,High,Zone B
+S003,Central School (Safe),20,Low,Zone C
+S004,Temple Pavilion,15,Medium,Zone D
+S005,Mountain Camp,8,High,Zone E

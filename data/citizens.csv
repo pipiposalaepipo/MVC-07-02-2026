@@ -1,0 +1,33 @@
+citizen_id,full_name,age,health_status,category
+C001,Somchai Jai-dee,45,Normal,General
+C002,Somsak Rak-chart,50,Normal,General
+C003,Sompong Kong-krapan,30,Strong,General
+C004,Mana Jaiphet,28,Normal,General
+C005,Manee Meeta,25,Normal,General
+C006,Grandma Boon,85,Critical,Vulnerable
+C007,Grandpa Mee,82,Chronic,Vulnerable
+C008,Auntie Ju,70,Bedridden,Vulnerable
+C009,Uncle Dang,68,Normal,Vulnerable
+C010,Mrs. Suda,60,Chronic,Vulnerable
+C011,Mr. Wichai,55,Normal,General
+C012,Ms. Ratana,40,Normal,General
+C013,Mr. Piti,35,Normal,General
+C014,Ms. Chujai,32,Normal,General
+C015,Mr. Somchai (Gen),29,Normal,General
+C016,Boy Dang,10,Normal,Vulnerable
+C017,Girl Dum,8,Normal,Vulnerable
+C018,Baby Red,2,Normal,Vulnerable
+C019,Master Keng,12,Asthma,Vulnerable
+C020,Nong Kaew,9,Normal,Vulnerable
+C021,Nong Ploy,7,Normal,Vulnerable
+C022,Dr. Strange,45,Strong,VIP
+C023,Nurse Joy,30,Normal,General
+C024,Officer Smith,40,Strong,General
+C025,Teacher Pen,50,Normal,General
+C026,Driver Pol,48,Normal,General
+C027,Cook Yai,55,Chronic,Vulnerable
+C028,Worker Mod,22,Normal,General
+C029,Student Ball,18,Normal,General
+C030,Senator Prawit,75,Chronic,VIP
+C031,Minister Chad,50,Strong,VIP
+C032,Patient Zero,90,Bedridden,Vulnerable
