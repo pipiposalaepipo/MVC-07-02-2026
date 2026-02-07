@@ -5,7 +5,7 @@ import datetime
 
 class DataManager:
     def __init__(self):
-        # ตรวจสอบว่า folder data อยู่ที่ไหน
+    
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         self.data_dir = os.path.join(base_dir, "data")
 
@@ -19,7 +19,6 @@ class DataManager:
         with open(file_path, mode='r', encoding='utf-8-sig') as file:
             reader = csv.DictReader(file)
             for row in reader:
-                # แก้ตรงนี้: ใช้ shelter_id (ตัวเล็ก) ตาม CSV
                 s = Shelter(
                     row['shelter_id'], 
                     row['name'], 
@@ -38,7 +37,6 @@ class DataManager:
         with open(file_path, mode='r', encoding='utf-8-sig') as file:
             reader = csv.DictReader(file)
             for row in reader:
-                # แก้ตรงนี้: ใช้ citizen_id (ตัวเล็ก) ตาม CSV
                 c = Citizen(
                     row['citizen_id'], 
                     row['full_name'], 
@@ -57,9 +55,8 @@ class DataManager:
         with open(file_path, mode='r', encoding='utf-8-sig') as file:
             reader = csv.DictReader(file)
             for row in reader:
-                # แก้ตรงนี้: ใช้ key ตัวเล็กทั้งหมด
                 a = Assignment(
-                    row.get('assignment_id', 0), # ถ้าไม่มี ID ให้ใส่ 0
+                    row.get('assignment_id', 0), 
                     row['citizen_id'], 
                     row['shelter_id'], 
                     row.get('timestamp', str(datetime.date.today()))

@@ -22,7 +22,7 @@ class ShelterPage(tk.Frame):
                   command=self.confirm).pack(side="left", padx=10)
 
     def update_data(self):
-        # ดึงข้อมูลจาก Controller -> Service
+        
         service = self.controller.get_service()
         shelters = service.get_all_shelters()
         
